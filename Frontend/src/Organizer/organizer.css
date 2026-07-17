@@ -1,0 +1,405 @@
+/* Professional Organizer Page Styles */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Container */
+.organizer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, #d63031 0%, #e17055 100%);
+  color: white;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(214, 48, 49, 0.2);
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.page-header p {
+  margin: 10px 0 0 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+}
+
+/* Temple Management */
+.temples-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.temple-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid #f0f0f0;
+}
+
+.temple-card:hover {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+}
+
+.temple-card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.temple-card-body {
+  padding: 20px;
+}
+
+.temple-card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.temple-card-text {
+  color: #636e72;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.temple-card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.temple-card-btn {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.temple-card-btn-primary {
+  background: linear-gradient(135deg, #d63031 0%, #e17055 100%);
+  color: white;
+  box-shadow: 0 4px 10px rgba(214, 48, 49, 0.2);
+}
+
+.temple-card-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(214, 48, 49, 0.3);
+}
+
+.temple-card-btn-secondary {
+  background-color: #f0f0f0;
+  color: #2d3436;
+  border: 2px solid #d63031;
+}
+
+.temple-card-btn-secondary:hover {
+  background-color: #e8e8e8;
+}
+
+/* Forms */
+.form-section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.form-section h2 {
+  color: #2d3436;
+  font-size: 1.8rem;
+  margin: 0 0 30px 0;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2d3436;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #d63031;
+  box-shadow: 0 0 0 3px rgba(214, 48, 49, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-row-full {
+  grid-column: 1 / -1;
+}
+
+/* Form Buttons */
+.form-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn-submit {
+  flex: 1;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #d63031 0%, #e17055 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(214, 48, 49, 0.3);
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(214, 48, 49, 0.4);
+}
+
+.btn-cancel {
+  flex: 1;
+  padding: 14px 20px;
+  background-color: #e0e0e0;
+  color: #2d3436;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-cancel:hover {
+  background-color: #d0d0d0;
+}
+
+/* Darshan Section */
+.darshan-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.darshan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.darshan-card {
+  background: linear-gradient(135deg, #f5f6fa 0%, #ffffff 100%);
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.darshan-card:hover {
+  border-color: #d63031;
+  box-shadow: 0 4px 15px rgba(214, 48, 49, 0.15);
+  transform: translateY(-3px);
+}
+
+.darshan-card h3 {
+  color: #2d3436;
+  margin: 0 0 10px 0;
+}
+
+.darshan-details {
+  color: #636e72;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.darshan-detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.darshan-detail-item:last-child {
+  border-bottom: none;
+}
+
+.darshan-label {
+  font-weight: 600;
+  color: #2d3436;
+}
+
+.darshan-value {
+  color: #636e72;
+}
+
+/* Table Styles */
+.table-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  overflow-x: auto;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th {
+  background: linear-gradient(135deg, #d63031 0%, #e17055 100%);
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-weight: 700;
+  border-bottom: 2px solid #d63031;
+}
+
+.table-container td {
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #636e72;
+}
+
+.table-container tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-active {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-cancelled {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* empty state */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #636e72;
+}
+
+.empty-state h3 {
+  font-size: 1.5rem;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .temples-list {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .form-section {
+    padding: 20px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .darshan-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .table-container {
+    padding: 15px;
+  }
+
+  .table-container th,
+  .table-container td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+  

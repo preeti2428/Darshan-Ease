@@ -1,0 +1,343 @@
+/* Professional User Page Styles */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* User Layout */
+.user-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Temple Listing */
+.temples-section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 40px 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.temples-section h1 {
+  text-align: center;
+  color: #2d3436;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.temples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.temple-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.temple-card:hover {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+}
+
+.temple-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.temple-card-body {
+  padding: 20px;
+}
+
+.temple-card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.temple-card-description {
+  color: #636e72;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.temple-card-action {
+  background: linear-gradient(135deg, #d63031 0%, #e17055 100%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(214, 48, 49, 0.3);
+}
+
+.temple-card-action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(214, 48, 49, 0.4);
+}
+
+/* Forms and Inputs */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2d3436;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #d63031;
+  box-shadow: 0 0 0 3px rgba(214, 48, 49, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Booking Form */
+.booking-form {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.booking-form h2 {
+  text-align: center;
+  color: #2d3436;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-row-full {
+  grid-column: 1 / -1;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #d63031 0%, #e17055 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(214, 48, 49, 0.3);
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(214, 48, 49, 0.4);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Bookings List */
+.bookings-container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bookings-container h2 {
+  color: #2d3436;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.booking-item {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.booking-item:hover {
+  border-color: #d63031;
+  box-shadow: 0 4px 12px rgba(214, 48, 49, 0.1);
+}
+
+.booking-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.booking-item-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2d3436;
+}
+
+.booking-status {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.booking-item-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  color: #636e72;
+  font-size: 0.95rem;
+}
+
+.booking-detail {
+  border-left: 3px solid #d63031;
+  padding-left: 10px;
+}
+
+.booking-detail-label {
+  font-weight: 600;
+  color: #2d3436;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #636e72;
+}
+
+.empty-state h3 {
+  font-size: 1.5rem;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Loading Spinner */
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #e0e0e0;
+  border-top: 3px solid #d63031;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Error Message */
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #d63031;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Success Message */
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #28a745;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .temples-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .booking-item-details {
+    grid-template-columns: 1fr;
+  }
+
+  .temples-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .booking-form {
+    padding: 20px;
+  }
+}
+  
